@@ -1,0 +1,28 @@
+$primary-color: #bada55;
+$secondary-color: #f15933;
+$smoke-1: #c0c0c9;
+
+p {
+	color: $primary-color;
+}
+.container {
+	width: 500px;
+	margin: 0 auto;
+	min-height: 200px;
+	border: 1px solid #c0c0c9;
+	color: red;
+
+	.sass-test-1 {
+		color: #ffffff;
+		background: $primary-color;
+
+	}
+	.sass-test-2 {
+		color: #ffffff;
+		background: $secondary-color;
+	}
+	.sass-test-3 {
+		color: #ffffff;
+		background: $smoke-1;
+	}
+}

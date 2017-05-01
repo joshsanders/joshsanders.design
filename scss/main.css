@@ -1,0 +1,18 @@
+p {
+  color: #bada55; }
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  min-height: 200px;
+  border: 1px solid #c0c0c9;
+  color: red; }
+  .container .sass-test-1 {
+    color: #ffffff;
+    background: #bada55; }
+  .container .sass-test-2 {
+    color: #ffffff;
+    background: #f15933; }
+  .container .sass-test-3 {
+    color: #ffffff;
+    background: #c0c0c9; }
