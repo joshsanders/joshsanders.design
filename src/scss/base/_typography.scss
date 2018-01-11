@@ -1,0 +1,97 @@
+/*------------------------------------*\
+  #BASE__TYPOGRAPHY
+\*------------------------------------*/
+
+// This file contains the required variables, maps, and functions for generating and using the MUI typography system
+
+// Contents:
+// ---------
+// 1. Set base defaults for font properties
+// 2. Mixin for implementation
+
+
+
+
+// |=====================================
+// | 1. Base Typographic Properties                   
+// |=====================================
+// |
+// | [1] = font-family  $ff
+// | [2] = font-size    $fs
+// | [3] = font-weight  $fw
+// | [4] = line-height  $lh
+
+// [1]
+$type__ff--sans: 'Work Sans', sans-serif;
+$type__ff--mono: 'Source Code Pro', mono;
+$type__ff--serif: 'Playfair Display', serif;
+
+// [2]
+// |- Typographic Scale: Major Second [1.125 - Normalized @ base-16]
+$type__fs--xs: 0.75rem;
+$type__fs--sm: 0.875rem;
+$type__fs--base: 1rem;
+$type__fs--lg: 1.125rem;
+$type__fs--xl: 1.4375rem;
+$type__fs--xxl: 2rem;
+
+// [3]
+$type__fw--base: 400;
+$type__fw--semi: 500;
+$type__fw--bold: 700;
+$type__fw--black: 900;
+
+// [4]
+$type__lh--base: 1;
+$type__lh--open: 1.45;
+  
+
+
+
+// mixin for easily applying default monster text-styles declarations
+
+@mixin text-style($style) {
+    @if $style == sm {
+        font-size: $type__fs--sm;
+        font-weight: $type__fw--base;
+    }
+
+    @else if $style == p {
+        font-size: $type__fs--base;
+        font-weight: $type__fw--base;
+    }
+
+    @else if $style == hero__heading {
+        font-size: 4.5rem;
+        font-weight: $type__fw--black;
+        font-family: $type__ff--serif;
+    }
+
+    @else if $style == hero__heading--sm {
+        font-size: 3rem;
+        font-weight: $type__fw--bold;
+        font-family: $type__ff--serif;
+    }
+    
+    @else {
+        @error "Invalid text-style input: `#{$style}` is not a valid text-style";
+    }
+}
+
+html {
+    font-size: 16px;
+    font-size: $type__fs--base;
+    font-family: $type__ff--sans;
+    font-weight: $type__fw--base;
+    line-height: $type__lh--base;
+}
+
+body {
+    font-size: $type__fs--base;
+}
+
+p,
+.p {
+    @include text-style(p);
+    line-height: $type__lh--open;
+}

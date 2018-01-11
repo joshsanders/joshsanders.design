@@ -1,0 +1,63 @@
+/*------------------------------------*\
+  #LAYOUT__GENERAL
+\*------------------------------------*/
+
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+section {
+	height: 80vh;
+	padding: 4rem 0;
+
+	@include grid(sm) {
+		padding: 2rem 0;
+	}
+
+}
+
+.section__title {
+  @include text-style(hero__heading);
+  color: color(grey, 600);
+  margin-bottom: 6rem;
+
+  @include grid(sm) {
+  	@include text-style(hero__heading--sm);
+  }
+
+}
+
+.section__sub-title {
+	color: color(primary, base);
+}
+
+.section__blurb {
+	color: color(grey, 600);
+	@include text-style(sm);
+}
+
+.grid--lines {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	.grid__row {
+		height: 100%;
+
+		.grid__col:last-child {
+			border-right: 1px solid color(grey, 100);
+		}
+	}
+
+	.grid__col {
+		height: 100%;
+		border-left: 1px solid color(grey, 100);
+	}
+
+
+}
