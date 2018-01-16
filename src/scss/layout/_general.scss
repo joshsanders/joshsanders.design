@@ -2,62 +2,115 @@
   #LAYOUT__GENERAL
 \*------------------------------------*/
 
-html,
-body {
-	height: 100%;
+html {
 	position: relative;
 }
 
-section {
-	height: 80vh;
-	padding: 4rem 0;
+.sidebar {
+	position: relative;
+    height: 2px;
+    width: 40px;
+    background: color(grey, 600);
+    margin-left: -1.5rem;
+}
 
-	@include grid(sm) {
-		padding: 2rem 0;
+.sidebar--hero {
+
+	&::before {
+		content: '';
+		position: absolute;
+		height: 2px;
+		width: 50%;
+		left: 0;
+		top: -6px;
+		background: color(grey, 600);
 	}
-
 }
 
-.section__title {
-  @include text-style(hero__heading);
-  color: color(grey, 600);
-  margin-bottom: 6rem;
-
-  @include grid(sm) {
-  	@include text-style(hero__heading--sm);
-  }
-
-}
-
-.section__sub-title {
-	color: color(primary, base);
-}
-
-.section__blurb {
-	color: color(grey, 600);
-	@include text-style(sm);
-}
-
-.grid--lines {
+.grid--knockout {
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
+	z-index: -5;
+	overflow-y: hidden;
 
-	.grid__row {
+	.grid__row,
+	.grid__col {
 		height: 100%;
+	}
 
-		.grid__col:last-child {
-			border-right: 1px solid color(grey, 100);
+	.color-bar {
+		background: color(primary, 600);
+		height: calc(100% + 10px);
+    	transform: translateY(-5px);
+		box-shadow: inset 2px 0 8px rgba(84, 7, 18, .2), inset -2px 0 8px rgba(84, 7, 18, .2);
+		background: rgba(247,84,47,0.3);
+		background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
+	}
+
+}
+
+.section {
+	@include v-space(lg);
+}
+
+.section--intro {
+
+	.section--intro__glyph {
+		width: 14px;
+		height: 14px;
+	}
+
+	.section--intro__content {
+		@include v-space(lg);
+		@include text-style(callout);
+
+		.spacer {
+			width: 2px;
+    		display: inline-block;
 		}
 	}
 
-	.grid__col {
-		height: 100%;
-		border-left: 1px solid color(grey, 100);
+}
+
+.section--showcase {
+
+	.section__title {
+		font-size: $type__fs--x-big;
+        font-weight: $type__fw--black;
+        font-family: $type__ff--serif;
+	}
+}
+
+.showcase-list {
+	@include v-space(lg);
+	width: 100%;
+	padding-bottom: 8rem;
+
+	.showcase-list__project {
+		width: 100%;
+		margin-bottom: 2rem;
+		display:flex;
+
+		a {
+			width: 100%;
+			@include flex-container;
+		}
 	}
 
+	.project__name {
 
+	}
+
+	.project__desc {
+
+	}
 }
+
+
+
+

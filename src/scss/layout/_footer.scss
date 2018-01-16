@@ -1,0 +1,37 @@
+/*------------------------------------*\
+  #LAYOUT__FOOTER
+\*------------------------------------*/
+
+
+.footer {
+	@include text-style(sm);
+	padding-bottom: 1rem;
+}
+
+.footer__contact {
+	color: color(primary, base);
+}
+
+.footer__copyright {
+	line-height: $type__lh--open;
+
+	.copyright__date {
+
+	}
+
+	.copyright__disclaimer {
+		text-transform: uppercase;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

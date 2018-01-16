@@ -4,12 +4,15 @@
 
 // BASE
 @import "base/reset";
-@import "base/typography";
 @import "base/colors";
+@import "base/typography";
+@import "base/vert-rhythm";
 
 // LAYOUT
 @import "layout/spyder-1.0/spyder-1.0";
 @import "layout/general"; 
+@import "layout/hero"; 
+@import "layout/footer"; 
 
 // COMPONENTS
 // @import "components/code";
@@ -27,5 +30,4 @@
 // @import "../../src/spyder-3.0";
 
 // UTILITIES
-// @import "utilities/margins";
 

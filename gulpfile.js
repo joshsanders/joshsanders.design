@@ -15,8 +15,9 @@ var src_scss = './src/scss/**/*.scss',
 	dist_js = './dist/js',
 	src_index = './src/index.html',
 	dist_index = './dist/',
-	src_html = './src/**/*.html',
-	dist_html = './dist/';
+	src_html = './src/projects/*.html',
+	dist_html = './dist/projects/',
+	all_html = './src/**/*.html';
 
 
 
@@ -32,11 +33,11 @@ gulp.task('serve', function(){
 });
 
 
-// Html move task (should minify for final build, currently just clones to ./dist/)
+// Html task for [src -> dist] (should minify for final build, currently just clones to ./dist/)
 // ---
-// watches directory for changes of desired files
+// watches directory for changes of desired files and copies to 'dist' folder
 
-gulp.task('html', function() {
+gulp.task('html-index', function() {
   return gulp.src( src_index )
     // .pipe(htmlMin({
     // 	collapseWhitespace: true
@@ -44,6 +45,17 @@ gulp.task('html', function() {
     .pipe(gulp.dest( dist_index ))
     .pipe(browserSync.stream());
 });
+
+gulp.task('html-projects', function() {
+  return gulp.src( src_html )
+    // .pipe(htmlMin({
+    // 	collapseWhitespace: true
+    // }))
+    .pipe(gulp.dest( dist_html ))
+    .pipe(browserSync.stream());
+});
+
+// gulp.task('html', ['html-index', 'html-projects']);
 
 
 // Styles task
@@ -88,7 +100,8 @@ gulp.task('watch', function(){
 
 	gulp.watch( src_scss, ['styles']);
 	gulp.watch( src_js, ['scripts']);
-	gulp.watch( src_index, ['html']).on('change', browserSync.reload);
+	gulp.watch( src_index, ['html-index']).on('change', browserSync.reload);
+	gulp.watch( src_html, ['html-projects']).on('change', browserSync.reload);
 
 });
 

@@ -1,0 +1,105 @@
+/*------------------------------------*\
+  #LAYOUT__HERO
+\*------------------------------------*/
+
+
+.hero {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	padding-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+.hero__wrap {
+	width: 100%;
+}
+
+.hero__wrap--logo {
+	margin-top: 4rem;
+
+	.hero__logo {
+
+	}
+
+}
+
+.hero__wrap--title {
+	.hero__title {
+		@include text-style(hero);
+		color: color(grey, 600);
+		// margin-top: 8.5rem;
+		position: relative;
+
+		// @include grid(sm) {
+		// 	@include text-style(hero--sm);
+		// }
+
+		.accent {
+			font-size: $type__fs--xxl;
+			font-style: italic;
+			font-weight: $type__fw--base;
+		}
+
+	}
+}
+
+.hero__wrap--nav {
+
+	.nav-link {
+		line-height: $type__lh--open;
+		color: color(grey, 600);
+		@include text-style(sm);
+		margin-bottom: .5rem;
+		display: block;
+		
+		a {
+			position: relative;
+			color: inherit;
+			padding: .25rem .25rem .25rem 0;
+
+			&::after {
+				content: '—';
+				position: absolute;
+				right: 0px;
+				transform: translateX(-4px);
+				top: 10%;
+				opacity: 0;
+				transition: all .16s cubic-bezier(0.2,1,0.56,1) 0s;
+			}
+
+			&:hover::after {
+				transform: translateX(8px);
+				opacity: 1;
+				color: color(primary, base);
+			}
+		}
+	}
+}
+
+.hero__wrap--sub {
+	// margin-top: auto;
+
+	.social__item {
+		width: 18px;
+		height: 18px;
+		fill: color(grey, 600);
+		display: inline-block;
+		margin-right: .5rem;
+	}
+
+	.subtitle__label {
+		@include text-style(sm-caps);
+    	margin-bottom: .5rem;
+	}
+
+	.subtitle__name {
+		@include text-style(sm);
+		color: color(primary, base);
+	}
+
+	.hero__date {
+		@include text-style(sm);
+	}
+}
