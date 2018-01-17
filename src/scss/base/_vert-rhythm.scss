@@ -8,20 +8,20 @@
 // |
 // | 8px base spacing assuming base typography is set at 1rem = 16px
 
-$spc-1: 0.5rem; 					// 8px @ base-16
+$spc-8: 0.5rem; 					// 8px @ base-16
 
-$spc-05: calc( #{$spc-1} / 2 );		// 4px @ base-16
-$spc-2: calc( #{$spc-1} * 2 ); 		// 16px @ base-16
-$spc-3: calc( #{$spc-1} * 3 ); 		// 24px @ base-16
-$spc-4: calc( #{$spc-1} * 4 );		// 32px @ base-16
-$spc-5: calc( #{$spc-1} * 5 );		// 40px @ base-16
-$spc-6: calc( #{$spc-1} * 6 );		// 48px @ base-16
-$spc-7: calc( #{$spc-1} * 7 );		// 56px @ base-16
-$spc-8: calc( #{$spc-1} * 8 );		// 64px @ base-16
-$spc-9: calc( #{$spc-1} * 9 );		// 72px @ base-16
+$spc-4: calc( #{$spc-8} / 2 );		// 4px @ base-16
+$spc-16: calc( #{$spc-8} * 2 ); 	// 16px @ base-16
+$spc-24: calc( #{$spc-8} * 3 ); 	// 24px @ base-16
+$spc-32: calc( #{$spc-8} * 4 );		// 32px @ base-16
+$spc-40: calc( #{$spc-8} * 5 );		// 40px @ base-16
+$spc-48: calc( #{$spc-8} * 6 );		// 48px @ base-16
+$spc-56: calc( #{$spc-8} * 7 );		// 56px @ base-16
+$spc-64: calc( #{$spc-8} * 8 );		// 64px @ base-16
+$spc-72: calc( #{$spc-8} * 9 );		// 72px @ base-16
 
-$spc-md: calc( #{$spc-1} * 10 );	// 80px @ base-16
-$spc-lg: calc( #{$spc-1} * 16 );	// 128px @ base-16
+$spc-80: calc( #{$spc-8} * 10 );	// 80px @ base-16
+$spc-128: calc( #{$spc-8} * 16 );	// 128px @ base-16
 
 
 
@@ -35,22 +35,85 @@ $spc-lg: calc( #{$spc-1} * 16 );	// 128px @ base-16
 
 @mixin v-space($val) {
 
-    @if $val == sm {
+    @if $val == 4 {
         margin-top: $spc-05;
     }
 
-    @else if $val == md {
-        margin-top: $spc-md;
+    @else if $val == 8 {
+        margin-top: $spc-8;
     }
 
-    @else if $val == lg {
-        margin-top: $spc-lg;
+    @else if $val == 16 {
+        margin-top: $spc-16;
+    }
+
+    @else if $val == 24 {
+        margin-top: $spc-24;
+    }
+
+    @else if $val == 32 {
+        margin-top: $spc-32;
+    }
+
+    @else if $val == 40 {
+        margin-top: $spc-40;
+    }
+
+    @else if $val == 48 {
+        margin-top: $spc-48;
+    }
+
+    @else if $val == 56 {
+        margin-top: $spc-56;
+    }
+
+    @else if $val == 64 {
+        margin-top: $spc-64;
+    }
+
+    @else if $val == 72 {
+        margin-top: $spc-72;
+    }
+
+    @else if $val == 80 {
+        margin-top: $spc-80;
+    }
+
+    @else if $val == 128 {
+        margin-top: $spc-128;
     }
 
     @else {
         @error "Invalid v-space input: `#{$val}` is not a valid v-space";
     }
 }
+
+
+
+
+
+// @mixin v-space($val) {
+
+//     @if $val == xs {
+//         margin-top: $spc-05;
+//     }
+
+//     @else if $val == sm {
+//         margin-top: $spc-sm;
+//     }
+
+//     @else if $val == md {
+//         margin-top: $spc-md;
+//     }
+
+//     @else if $val == lg {
+//         margin-top: $spc-lg;
+//     }
+
+//     @else {
+//         @error "Invalid v-space input: `#{$val}` is not a valid v-space";
+//     }
+// }
 
 // .u-mt-05 { margin-top: $spc-05; }
 // .u-mt-1 { margin-top: $spc-1; }

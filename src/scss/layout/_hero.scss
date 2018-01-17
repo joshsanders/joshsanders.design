@@ -5,6 +5,7 @@
 
 .hero {
 	height: 100vh;
+	max-height: 1000px;
 	display: flex;
 	flex-direction: column;
 
@@ -66,7 +67,7 @@
 				transform: translateX(-4px);
 				top: 10%;
 				opacity: 0;
-				transition: all .16s cubic-bezier(0.2,1,0.56,1) 0s;
+				transition: all .16s cubic-bezier(0.2,1,0.56,1);
 			}
 
 			&:hover::after {

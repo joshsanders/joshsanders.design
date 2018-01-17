@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  #PAGES__PROJECT
+\*------------------------------------*/
+
+// This file contains specific styles for the general look and feel of the project pages
+
+// Contents:
+// ---------
+// 1. ***
+
+
+
+
+// |=====================================
+// | 1. Section Head                  
+// |=====================================
+// |
+// | Description...
+
+
+.project {
+	.bg-knockout {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -5;
+		overflow-y: hidden;
+
+		.grid__row,
+		.grid__col {
+			height: 100%;
+		}
+
+		.color-bar {
+			background: color(primary, 600);
+			height: calc(100% + 10px);
+	    	transform: translateY(-5px);
+			box-shadow: inset 2px 0 8px rgba(84, 7, 18, .2), inset -2px 0 8px rgba(84, 7, 18, .2);
+			background: rgba(247,84,47,0.3);
+			background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
+		}
+
+	}
+}
+
+
+
+
+
+
+
