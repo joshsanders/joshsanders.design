@@ -21,6 +21,7 @@ $spc-64: calc( #{$spc-8} * 8 );		// 64px @ base-16
 $spc-72: calc( #{$spc-8} * 9 );		// 72px @ base-16
 
 $spc-80: calc( #{$spc-8} * 10 );	// 80px @ base-16
+$spc-96: calc( #{$spc-8} * 12 );    // 96px @ base-16
 $spc-128: calc( #{$spc-8} * 16 );	// 128px @ base-16
 
 
@@ -77,6 +78,10 @@ $spc-128: calc( #{$spc-8} * 16 );	// 128px @ base-16
 
     @else if $val == 80 {
         margin-top: $spc-80;
+    }
+
+    @else if $val == 96 {
+        margin-top: $spc-96;
     }
 
     @else if $val == 128 {

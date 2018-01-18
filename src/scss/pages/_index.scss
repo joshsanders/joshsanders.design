@@ -6,20 +6,16 @@
 
 // Contents:
 // ---------
-// 1. Base Color Defs
-// 2. Color Map
-// 3. Color Function for implementing colors 
+// 1. ***
 
 
 
 
 // |=====================================
-// | 1. Base Color Defs                   
+// | 1. Section Head                  
 // |=====================================
 // |
-// | [1.1] - Main Color Palette
-// | [1.2] - Secondary Color Palette
-// | [1.3] - Scale amounts converted to variables to make future customization easier
+// | Description...
 
 
 .home {
@@ -64,6 +60,33 @@
 
 	}
 
+	.sidebar {
+		position: relative;
+	    height: 2px;
+	    width: 40px;
+	    background: color(grey, 600);
+	    margin-left: -1.5rem;
+	}
+
+	.sidebar--hero {
+
+		&::before {
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 50%;
+			left: 0;
+			top: -6px;
+			background: color(grey, 600);
+		}
+	}
+
+	.hero__titled-list {
+		.titled-list__content {
+			@include text-style(sm);
+			color: color(primary, base);
+		}
+	}
 
 }
 
@@ -179,7 +202,7 @@
 	}
 
 	.project__name {
-		font-family: $type__ff--sans;
+		font-family: 'sf_monosemibold', $type__ff--mono, monopsaced;
 		font-size: $type__fs--xl;
 		font-weight: $type__fw--semi;
 	}
@@ -218,6 +241,7 @@
 		display: block;
 		transition: all .16s cubic-bezier(0.2,1,0.56,1);
 		padding: .75rem 0;
+		display: inline-block;
 
 		&:hover {
 			color: color(primary, base);
@@ -227,13 +251,13 @@
 				width: 16px;
 
 				&::before {
-					top: -6px;
+					top: -5px;
 					left: 0;
 					background: color(primary, base);
 				} 
 
 				&::after {
-					bottom: -6px;
+					bottom: -5px;
 					left: 0;
 					background: color(primary, base);
 				} 

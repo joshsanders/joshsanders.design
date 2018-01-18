@@ -6,29 +6,136 @@
 
 // Contents:
 // ---------
-// 1. Set base font property variables
-// 2. Mixin for creating text-styles
-// 3. Foundational typographic values 
+// 1. Declare specific fonts [hosted font files located at: './dist/fonts' ]
+// 2. Set base font property variables
+// 3. Mixin for creating text-styles
+// 4. Foundational typographic values 
 
 
 
 
 // |=======================================
-// | 1. Base Property Variables                   
+// | 1. Declare specific hosted fonts                   
 // |=======================================
 // |
-// | [1] = font-family  $ff
-// | [2] = font-size    $fs
-// | [3] = font-weight  $fw
-// | [4] = line-height  $lh
+// | !!!  REMOVE EACH UNUSED REFERENCE WHEN DEV IS DONE. DON'T FORGET THE ACTUAL FONT FILE REMOVAL !!!
 
 
-// [1]
+@font-face {
+    font-family: 'sf_monobold';
+    src: url('../fonts/sfmono-bold-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monobold_italic';
+    src: url('../fonts/sfmono-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monoheavy';
+    src: url('../fonts/sfmono-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monoheavy_italic';
+    src: url('../fonts/sfmono-heavyitalic-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-heavyitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monolight';
+    src: url('../fonts/sfmono-light-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monolight_italic';
+    src: url('../fonts/sfmono-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monomedium';
+    src: url('../fonts/sfmono-medium-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monomedium_italic';
+    src: url('../fonts/sfmono-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monoregular';
+    src: url('../fonts/sfmono-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monoregular_italic';
+    src: url('../fonts/sfmono-regularitalic-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monosemibold';
+    src: url('../fonts/sfmono-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monosemibold_italic';
+    src: url('../fonts/sfmono-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/sfmono-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+// |=======================================
+// | 2. Base Property Variables                   
+// |=======================================
+// |
+// | [2.1] = font-family  $ff
+// | [2.2] = font-size    $fs
+// | [2.3] = font-weight  $fw
+// | [2.4] = line-height  $lh
+
+
+// [2.1]
 $type__ff--sans: 'Work Sans', sans-serif;
 $type__ff--mono: 'Source Code Pro', mono;
 $type__ff--serif: 'Playfair Display', serif;
 
-// [2]
+// [2.2]
 $type__fs--xs: 0.75rem;     // 12px
 $type__fs--sm: 0.875rem;    // 14px
 $type__fs--base: 1rem;      // 16px (base)
@@ -40,13 +147,13 @@ $type__fs--big: 3rem;       // 48px
 $type__fs--x-big: 4rem;     // 64px   
 $type__fs--super: 5rem;     // 80px
 
-// [3]
+// [2.3]
 $type__fw--base: 400;
 $type__fw--semi: 500;
 $type__fw--bold: 700;
 $type__fw--black: 900;
 
-// [4]
+// [2.4]
 $type__lh--base: 1;
 $type__lh--open: 1.45;
   
@@ -54,7 +161,7 @@ $type__lh--open: 1.45;
 
 
 // |=======================================
-// | 2. Mixin for specific text-styles                   
+// | 3. Mixin for specific text-styles                   
 // |=======================================
 
 
@@ -62,15 +169,17 @@ $type__lh--open: 1.45;
 
     @if $style == xs {
         font-size: $type__fs--xs;
-        font-weight: $type__fw--base;
+        // font-weight: $type__fw--base;
+        font-family: 'sf_monomedium';
         letter-spacing: 0.01rem;
     }
 
     @else if $style == sm-caps {
         font-size: $type__fs--xs;
-        font-weight: $type__fw--bold;
+        // font-weight: $type__fw--bold;
         letter-spacing: 0.01rem;
         text-transform: uppercase;
+        font-family: 'sf_monosemibold';
     }
 
     @else if $style == sm {
@@ -82,14 +191,14 @@ $type__lh--open: 1.45;
         font-size: $type__fs--base;
         font-weight: $type__fw--base;
         line-height: $type__lh--open;
-        letter-spacing: -0.02rem;
+        // letter-spacing: -0.02rem;
     }
 
     @else if $style == callout {
         font-size: $type__fs--lg;
         font-weight: $type__fw--base;
         line-height: $type__lh--open;
-        letter-spacing: -0.02rem;
+        // letter-spacing: -0.02rem;
     }
 
     @else if $style == hero {
@@ -113,14 +222,15 @@ $type__lh--open: 1.45;
 
 
 // |=====================================
-// | 3. Foundational Type Values                 
+// | 4. Foundational Type Values                 
 // |=====================================
 
 
 html {
     font-size: 16px; 
     font-size: $type__fs--base;
-    font-family: $type__ff--mono;
+    // font-family: $type__ff--mono;
+    font-family: 'sf_monoregular', $type__ff--mono;
     font-weight: $type__fw--base;
     line-height: $type__lh--base;
     color: color(grey, 600);

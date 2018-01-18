@@ -4,7 +4,7 @@
 
 
 .footer {
-	@include text-style(sm);
+	@include text-style(xs);
 	padding-bottom: 1rem;
 }
 
@@ -19,6 +19,11 @@
 
 	}
 
+	.copyright__font-fix {
+		transform: scale(1.5) translateY(2px);
+    	display: inline-block;
+   		width: 12px;
+	}
 	.copyright__disclaimer {
 		text-transform: uppercase;
 	}

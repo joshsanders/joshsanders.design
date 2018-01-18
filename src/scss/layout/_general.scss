@@ -2,29 +2,9 @@
   #LAYOUT__GENERAL
 \*------------------------------------*/
 
+
 html {
 	position: relative;
-}
-
-.sidebar {
-	position: relative;
-    height: 2px;
-    width: 40px;
-    background: color(grey, 600);
-    margin-left: -1.5rem;
-}
-
-.sidebar--hero {
-
-	&::before {
-		content: '';
-		position: absolute;
-		height: 2px;
-		width: 50%;
-		left: 0;
-		top: -6px;
-		background: color(grey, 600);
-	}
 }
 
 .section {
@@ -36,6 +16,19 @@ html {
 	display: inline-block;
 }
 
+.hero__titled-list {
+
+}
+
+.titled-list__label {
+	@include text-style(sm-caps);
+	margin-bottom: .5rem;
+}
+
+.titled-list__content {
+	@include text-style(sm);
+	background: var(--blue);
+}
 
 
 

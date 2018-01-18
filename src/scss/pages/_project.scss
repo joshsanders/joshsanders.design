@@ -27,7 +27,7 @@
 		right: 0;
 		bottom: 0;
 		z-index: -5;
-		overflow-y: hidden;
+		// overflow-y: hidden;
 
 		.grid__row,
 		.grid__col {
@@ -36,14 +36,37 @@
 
 		.color-bar {
 			background: color(primary, 600);
+			width: 100vw;
 			height: calc(100% + 10px);
-	    	transform: translateY(-5px);
+			transform: translate(-100vw, -5px);
+
 			box-shadow: inset 2px 0 8px rgba(84, 7, 18, .2), inset -2px 0 8px rgba(84, 7, 18, .2);
 			background: rgba(247,84,47,0.3);
 			background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
 		}
 
+	}
+
+	.sidebar {
+		position: relative;
+	    height: 2px;
+	    width: 40px;
+	    background: color(grey, 600);
+	    margin-left: 0px;
+	}
+
+	.sidebar--hero {
+
+		&::before {
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 50%;
+			left: 0;
+			top: -6px;
+			background: color(grey, 600);
+		}
 	}
 }
 
