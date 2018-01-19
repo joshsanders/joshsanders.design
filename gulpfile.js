@@ -15,8 +15,8 @@ var src_scss = './src/scss/**/*.scss',
 	dist_js = './dist/js',
 	src_index = './src/index.html',
 	dist_index = './dist/',
-	src_html = './src/projects/*.html',
-	dist_html = './dist/projects/',
+	src_html = './src/work/*.html',
+	dist_html = './dist/work/',
 	all_html = './src/**/*.html';
 
 

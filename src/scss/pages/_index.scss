@@ -36,12 +36,12 @@
 
 		.color-bar {
 			background: color(primary, 600);
-			height: calc(100% + 10px);
-	    	transform: translateY(-5px);
-			box-shadow: inset 2px 0 8px rgba(84, 7, 18, .2), inset -2px 0 8px rgba(84, 7, 18, .2);
 			background: rgba(247,84,47,0.3);
 			background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
+			height: calc(100% + 10px);
+	    	transform: translateY(-5px);
+			box-shadow: inset 2px 0 8px rgba(84, 7, 18, .2), inset -2px 0 8px rgba(84, 7, 18, .2);
 		}
 
 	}
@@ -56,6 +56,7 @@
 		.section--intro__content {
 			@include v-space(128);
 			@include text-style(callout);
+			padding-right: .5rem;
 		}
 
 	}
@@ -235,73 +236,8 @@
 
 	}
 
-	.link--all-proj {
-		@include text-style(sm-caps);
-		@include v-space(16);
-		display: block;
-		transition: all .16s cubic-bezier(0.2,1,0.56,1);
-		padding: .75rem 0;
-		display: inline-block;
-
-		&:hover {
-			color: color(primary, base);
-
-			.icon--list {
-				background: color(primary, base);
-				width: 16px;
-
-				&::before {
-					top: -5px;
-					left: 0;
-					background: color(primary, base);
-				} 
-
-				&::after {
-					bottom: -5px;
-					left: 0;
-					background: color(primary, base);
-				} 
-			}
-		}
-
-		.icon--list {
-			width: 12px;
-			height: 2px;
-			position: relative;
-			background: color(grey, 600);
-			display: inline-block;
-			vertical-align: middle;
-			margin-bottom: 2px;
-    		margin-right: 16px;
-    		transition: all .16s cubic-bezier(0.2,1,0.56,1);
-    		
-
-			&::before,
-			&::after {
-				position: absolute;
-				content: "";
-				height: 2px;
-				background: color(grey, 600);
-				width: 16px;
-				transition: all .16s cubic-bezier(0.2,1,0.56,1);
-			} 
-
-			&::before {
-				top: -4px;
-				left: 0;
-				
-			} 
-
-			&::after {
-				bottom: -4px;
-				left: 0;
-			} 
-
-		}
-
-	}
-
 }
+
 
 
 

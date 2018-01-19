@@ -35,15 +35,15 @@
 		}
 
 		.color-bar {
-			background: color(primary, 600);
+			// background: color(primary, 600);
+			// background: rgba(247,84,47,0.3);
+			// background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
+			// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
 			width: 100vw;
 			height: calc(100% + 10px);
 			transform: translate(-100vw, -5px);
 
 			box-shadow: inset 2px 0 8px rgba(84, 7, 18, .2), inset -2px 0 8px rgba(84, 7, 18, .2);
-			background: rgba(247,84,47,0.3);
-			background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
 		}
 
 	}
@@ -68,10 +68,40 @@
 			background: color(grey, 600);
 		}
 	}
+
+	.section__title {
+		@include text-style(sm-caps);	
+	}
+
+	.proj__intro {
+		@include v-space(64);
+	}
+
 }
 
+.color-bar--user-portal {
+	background: rgba(0,218,218,0.3);
+	background: linear-gradient(to bottom, rgba(0,255,169,0.3) 0%, rgba(0,218,218,0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00FFA9', endColorstr='#00DADA', GradientType=0 );
+}
 
+.color-bar--2600hz {
+	background: rgba(255,89,51,0.3);
+	background: linear-gradient(to bottom, rgba(255,164,51,0.3) 0%, rgba(255,89,51,0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFA433', endColorstr='#ff5933', GradientType=0 );
+}
 
+.color-bar--spyder {
+	background: rgba(253,20,76,0.3);
+	background: linear-gradient(to bottom, rgba(253,59,59,0.3) 0%, rgba(253,20,76,0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FD3B3B', endColorstr='#FF144C', GradientType=0 );
+}
+
+.color-bar--cluster {
+	background: rgba(0,79,218,0.3);
+	background: linear-gradient(to bottom, rgba(41,187,252,0.3) 0%, rgba(0,79,218,0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29BBFC', endColorstr='#004FDA', GradientType=0 );
+}
 
 
 

@@ -16,18 +16,27 @@ html {
 	display: inline-block;
 }
 
-.hero__titled-list {
+// .hero__titled-list {
 
-}
+// }
 
 .titled-list__label {
 	@include text-style(sm-caps);
-	margin-bottom: .5rem;
+	margin-bottom: .75rem;
 }
 
 .titled-list__content {
 	@include text-style(sm);
-	background: var(--blue);
+
+	.ul {
+
+		.list-item {
+			line-height: $type__lh--open;
+			margin-bottom: .5rem;
+		}
+
+	}
+
 }
 
 
