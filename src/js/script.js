@@ -52,7 +52,7 @@ $(document).ready(function() {
 		 e.preventDefault();
 
 		$('body').css('overflow', 'auto');
-		$('.menu-container').removeClass('fadeIn').queueAddClass('fadeOut').delay(1000).queueRemoveClass('is-open');
+		$('.menu-container').removeClass('fadeIn').queueAddClass('fadeOut').delay(400).queueRemoveClass('is-open');
 		
 	});
 

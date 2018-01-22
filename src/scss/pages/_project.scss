@@ -48,26 +48,7 @@
 
 	}
 
-	.sidebar {
-		position: relative;
-	    height: 2px;
-	    width: 40px;
-	    background: color(grey, 600);
-	    margin-left: 0px;
-	}
 
-	.sidebar--hero {
-
-		&::before {
-			content: '';
-			position: absolute;
-			height: 2px;
-			width: 50%;
-			left: 0;
-			top: -6px;
-			background: color(grey, 600);
-		}
-	}
 
 	.section__title {
 		@include text-style(sm-caps);	
@@ -103,6 +84,11 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29BBFC', endColorstr='#004FDA', GradientType=0 );
 }
 
+.color-bar--telicon {
+	background: rgba(143, 53, 241, .3);
+	background: linear-gradient(to bottom, rgba(16, 0, 255, 0.3) 0, rgba(143, 53, 241, .3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1000ff', endColorstr='#8F35F1', GradientType=0 );
+}
 
 
-
+ 

@@ -28,7 +28,9 @@ var src_scss = './src/scss/**/*.scss',
 
 gulp.task('serve', function(){
 	browserSync.init({
-		server: './dist/'
+		// server: './dist/'
+
+		proxy: 'localhost:8888/joshsanders.design/dist/'	//this url path proxies to where MAMP is running a local virtual server 
 	});
 });
 

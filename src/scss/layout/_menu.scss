@@ -24,10 +24,11 @@
 .menu {
 
 }
-
-.menu .sidebar {
-	margin-top: -8px;
-}
+ 
+// .menu .sidebar {
+// 	margin-top: -8px;
+// 	margin-left: -1.5rem;
+// }
 
 .menu__header {
 	@include v-space(64);
@@ -37,6 +38,8 @@
 	}
 
 }
+
+
 
 .menu__body {
 	@include v-space(72);
@@ -54,7 +57,8 @@
 
 	.links-list__item {
 
-		&:hover {
+		&:hover,
+		&.is-active {
 
 			.links-list__link {
 				color: color(primary, base);
@@ -101,6 +105,7 @@
 	.proj-list__proj {
 		// border-bottom: 1px solid color(grey, 200);
 
+		// &.is-current,
 		&:hover {
 
 			.proj__number {
