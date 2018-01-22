@@ -98,6 +98,10 @@
         font-weight: $type__fw--black;
         font-family: $type__ff--serif;
 	}
+
+	.nav-link {
+		@include v-space(16);
+	}
 }
 
 .showcase-list {

@@ -28,16 +28,75 @@ html {
 .titled-list__content {
 	@include text-style(sm);
 
-	.ul {
-
-		.list-item {
-			line-height: $type__lh--open;
-			margin-bottom: .5rem;
-		}
-
+	.list-item {
+		line-height: $type__lh--open;
+		margin-bottom: .5rem;
 	}
 
 }
 
+.icon {
+	width: 16px;
+	height: 16px;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 2px;
+	margin-right: 12px;
+	background: color(grey, 600);
+	transition: all .16s cubic-bezier(0.2,1,0.56,1);
+}
 
+.icon--list {
+	width: 16px;
+	height: 2px;
+	
 
+	&::before,
+	&::after {
+		position: absolute;
+		content: "";
+		height: 2px;
+		background: inherit;
+		width: 100%;
+		left: 0;
+		transition: top .16s cubic-bezier(0.2,1,0.56,1), bottom .16s cubic-bezier(0.2,1,0.56,1);
+	} 
+
+	&::before {
+		top: -4px;
+		
+	} 
+
+	&::after {
+		bottom: -4px;
+	} 
+
+}
+
+.icon--close {
+	width: 14px;
+	height: 2px;
+	transform: rotate(-45deg);
+	margin-right: 8px;
+	// display: inline-block;
+
+	&::before {
+		position: absolute;
+		content: "";
+		height: 2px;
+		width: 14px;
+		transform: rotate(90deg);
+		background: inherit;
+	}
+
+}
+
+.list__item {
+	line-height: $type__lh--open;
+    margin-bottom: .5rem;
+
+    .list__link {
+    	display: block;
+	}
+}
