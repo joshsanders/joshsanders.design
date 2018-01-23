@@ -22,7 +22,15 @@
 }
 
 .menu {
+	height: 100%;
 
+	.grid {
+		height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	
 }
  
 // .menu .sidebar {
@@ -31,7 +39,7 @@
 // }
 
 .menu__header {
-	@include v-space(64);
+	// @include v-space(64);
 
 	.header__text {
 		@include text-style(hero);

@@ -43,12 +43,10 @@
 			height: calc(100% + 10px);
 			transform: translate(-100vw, -5px);
 
-			box-shadow: inset 2px 0 8px rgba(84, 7, 18, .2), inset -2px 0 8px rgba(84, 7, 18, .2);
+			box-shadow: inset 2px 0 8px rgba(0, 0, 0, .2), inset -2px 0 8px rgba(0, 0, 0, .2);
 		}
 
 	}
-
-
 
 	.section__title {
 		@include text-style(sm-caps);	
@@ -67,9 +65,9 @@
 }
 
 .color-bar--2600hz {
-	background: rgba(255,89,51,0.3);
-	background: linear-gradient(to bottom, rgba(255,164,51,0.3) 0%, rgba(255,89,51,0.3) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFA433', endColorstr='#ff5933', GradientType=0 );
+	background: rgba(255, 94, 0, 0.3);
+	background: linear-gradient(to bottom,rgba(255, 153, 0, 0.3) 0, rgba(255, 94, 0, 0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ff5e00', GradientType=0 );
 }
 
 .color-bar--spyder {
@@ -85,9 +83,27 @@
 }
 
 .color-bar--telicon {
-	background: rgba(143, 53, 241, .3);
-	background: linear-gradient(to bottom, rgba(16, 0, 255, 0.3) 0, rgba(143, 53, 241, .3) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1000ff', endColorstr='#8F35F1', GradientType=0 );
+	background: rgba(16, 0, 255, 0.3);
+	background: linear-gradient(to bottom, rgba(143, 53, 241, .3) 0, rgba(16, 0, 255, 0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8F35F1', endColorstr='#1000ff', GradientType=0 );
+}
+
+.color-bar--apps {
+	background: rgba(0, 255, 90, 0.3);
+	background: linear-gradient(to bottom, rgba(98, 255, 0, 0.3) 0, rgba(0, 255, 90, 0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62ff00', endColorstr='#00ff5a', GradientType=0 );
+}
+
+.color-bar--whitelabeling {
+	background: rgba(255, 153, 0, 0.3);
+	background: linear-gradient(to bottom, rgba(255,212,0,.3) 0, rgba(255,153,0,.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd400', endColorstr='#ff9900', GradientType=0 );
+}
+
+.color-bar--civilmaps {
+	background: rgba(255, 94, 0, 0.3);
+	background: linear-gradient(to bottom,rgba(255, 153, 0, 0.3) 0, rgba(255, 94, 0, 0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ff5e00', GradientType=0 );
 }
 
 
