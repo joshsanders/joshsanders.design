@@ -30,7 +30,7 @@
 	    flex-direction: column;
 	    justify-content: center;
 	}
-	
+
 }
  
 // .menu .sidebar {
@@ -65,19 +65,24 @@
 
 	.links-list__item {
 
-		&:hover,
-		&.is-active {
+		// &:hover,
+		// &.is-active {
 
-			.links-list__link {
-				color: color(primary, base);
-			}
-		}
+		// 	.links-list__link {
+		// 		color: color(primary, base);
+		// 	}
+		// }
 
 	}
 
 	.links-list__link {
-		display: block;
+		display: inline-block;
 		padding: .5rem .5rem .5rem 0;
+
+		&:hover,
+		&.is-active {
+			color: color(primary, base);
+		}
 	}
 
 }

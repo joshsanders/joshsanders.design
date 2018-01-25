@@ -44,16 +44,15 @@ $(document).ready(function() {
 	$('.js-menu-trigger').on('click', function(e) {
 		 e.preventDefault();
 
-		$('body').css('overflow', 'hidden');
 		$('.menu-container').removeClass('fadeOut').addClass('fadeIn').toggleClass('is-open');
+		$('body').css('overflow', 'hidden');
 	});
 
 	$('.js-close-menu').on('click', function(e) {
 		 e.preventDefault();
 
+		$('.menu-container').removeClass('fadeIn').queueAddClass('fadeOut').queueRemoveClass('is-open');
 		$('body').css('overflow', 'auto');
-		$('.menu-container').removeClass('fadeIn').queueAddClass('fadeOut').delay(400).queueRemoveClass('is-open');
-		
 	});
 
 

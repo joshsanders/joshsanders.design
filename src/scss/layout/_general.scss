@@ -16,12 +16,22 @@ html {
 	display: inline-block;
 }
 
+
+// |=====================================
+// | Sidebar                   
+// |=====================================
+
 .sidebar {
 	position: relative;
     height: 2px;
     width: 40px;
     background: color(grey, 600);
     margin-left: -1.5rem;
+
+    @include grid(md) {
+    	margin-left: -1rem;
+    }
+
 }
 
 .sidebar--hero {
@@ -45,6 +55,168 @@ html {
 .sidebar--project {
     margin-left: 0px;
 }
+
+
+// |=====================================
+// | Knockout color-bar                   
+// |=====================================
+// |
+// | Description...
+
+.bg-knockout {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -5;
+	// overflow-y: hidden;
+
+	.grid__row,
+	.grid__col {
+		height: 100%;
+	}
+
+}
+
+.color-bar {
+	height: calc(100% + 10px);
+	transform: translateY(-5px);
+	box-shadow: inset 2px 0 8px rgba(0, 0, 0, .15), inset -2px 0 8px rgba(0, 0, 0, .15);
+}
+
+.color-bar--home {
+	background: rgba(255, 0, 36, 0.3);
+	background: linear-gradient(to bottom, rgba(255, 23, 0, 0.3) 0, rgba(255, 0, 36, 0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1700', endColorstr='#ff0024', GradientType=0 );
+}
+
+.color-bar--project {
+	width: 100vw;
+	transform: translate(-100vw, -5px);
+}
+
+
+// Specific project page knockout bar colors
+
+.color-bar--employee-portal {
+	background: rgba(0,218,218,0.3);
+	background: linear-gradient(to bottom, rgba(0,255,169,0.3) 0%, rgba(0,218,218,0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00FFA9', endColorstr='#00DADA', GradientType=0 );
+}
+
+.color-bar--2600hz {
+	background: rgba(255, 94, 0, 0.3);
+	background: linear-gradient(to bottom,rgba(255, 153, 0, 0.3) 0, rgba(255, 94, 0, 0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ff5e00', GradientType=0 );
+}
+
+.color-bar--spyder {
+	background: rgba(253,20,76,0.3);
+	background: linear-gradient(to bottom, rgba(253,59,59,0.3) 0%, rgba(253,20,76,0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FD3B3B', endColorstr='#FF144C', GradientType=0 );
+}
+
+.color-bar--cluster {
+	background: rgba(0,79,218,0.3);
+	background: linear-gradient(to bottom, rgba(41,187,252,0.3) 0%, rgba(0,79,218,0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29BBFC', endColorstr='#004FDA', GradientType=0 );
+}
+
+.color-bar--telicon {
+	background: rgba(16, 0, 255, 0.3);
+	background: linear-gradient(to bottom, rgba(143, 53, 241, .3) 0, rgba(16, 0, 255, 0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8F35F1', endColorstr='#1000ff', GradientType=0 );
+}
+
+.color-bar--apps {
+	background: rgba(0, 255, 90, 0.3);
+	background: linear-gradient(to bottom, rgba(98, 255, 0, 0.3) 0, rgba(0, 255, 90, 0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62ff00', endColorstr='#00ff5a', GradientType=0 );
+}
+
+.color-bar--whitelabeling {
+	background: rgba(255, 153, 0, 0.3);
+	background: linear-gradient(to bottom, rgba(255,212,0,.3) 0, rgba(255,153,0,.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd400', endColorstr='#ff9900', GradientType=0 );
+}
+
+.color-bar--civilmaps {
+	background: rgba(255, 94, 0, 0.3);
+	background: linear-gradient(to bottom,rgba(255, 153, 0, 0.3) 0, rgba(255, 94, 0, 0.3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#ff5e00', GradientType=0 );
+}
+
+
+// .home {
+// 	.bg-knockout {
+// 		height: 100%;
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		z-index: -5;
+// 		overflow-y: hidden;
+
+// 		.grid__row,
+// 		.grid__col {
+// 			height: 100%;
+// 		}
+
+// 		.color-bar {
+// 			background: color(primary, 600);
+// 			background: rgba(247,84,47,0.3);
+// 			background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
+// 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
+// 			height: calc(100% + 10px);
+// 	    	transform: translateY(-5px);
+// 			box-shadow: inset 2px 0 8px rgba(0, 0, 0, .2), inset -2px 0 8px rgba(0, 0, 0, .2);
+// 		}
+
+// 	}
+
+
+// .project {
+// 	.bg-knockout {
+// 		height: 100%;
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		z-index: -5;
+
+// 		.grid__row,
+// 		.grid__col {
+// 			height: 100%;
+// 		}
+
+// 		.color-bar {
+// 			// background: rgba(247,84,47,0.3);
+// 			// background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
+// 			// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
+// 			width: 100vw;
+// 			height: calc(100% + 10px);
+// 			transform: translate(-100vw, -5px);
+
+// 			box-shadow: inset 2px 0 8px rgba(0, 0, 0, .2), inset -2px 0 8px rgba(0, 0, 0, .2);
+// 		}
+
+// 	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,7 +252,7 @@ html {
 }
 
 .icon--list {
-	width: 16px;
+	width: 12px;
 	height: 2px;
 	
 
@@ -90,7 +262,7 @@ html {
 		content: "";
 		height: 2px;
 		background: inherit;
-		width: 100%;
+		width: 16px;
 		left: 0;
 		transition: top .16s cubic-bezier(0.2,1,0.56,1), bottom .16s cubic-bezier(0.2,1,0.56,1);
 	} 
