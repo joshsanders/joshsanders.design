@@ -110,6 +110,18 @@ html {
 	transform: translate(-100vw, -5px);
 }
 
+.menu-container {
+
+	.color-bar {
+
+		@include grid(md) {
+			width: 100vw;
+    		transform: translate(-100vw,-5px);
+		}
+
+	}
+
+}	
 
 // Specific project page knockout bar colors
 
