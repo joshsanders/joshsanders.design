@@ -19,32 +19,6 @@
 
 
 .project {
-	// .bg-knockout {
-	// 	height: 100%;
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	z-index: -5;
-
-	// 	.grid__row,
-	// 	.grid__col {
-	// 		height: 100%;
-	// 	}
-
-	// 	.color-bar {
-	// 		// background: rgba(247,84,47,0.3);
-	// 		// background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
-	// 		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
-	// 		width: 100vw;
-	// 		height: calc(100% + 10px);
-	// 		transform: translate(-100vw, -5px);
-
-	// 		box-shadow: inset 2px 0 8px rgba(0, 0, 0, .2), inset -2px 0 8px rgba(0, 0, 0, .2);
-	// 	}
-
-	// }
 
 	.section__title {
 		@include text-style(sm-caps);	

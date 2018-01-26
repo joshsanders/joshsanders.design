@@ -75,17 +75,16 @@
 }
 
 .hero__title {
-	@include text-style(hero);
+	@include text-style(hero--sm);
 	color: color(grey, 600);
-	// margin-top: 8.5rem;
 	position: relative;
 
 	// @include grid(sm) {
 	// 	@include text-style(hero--sm);
 	// }
 
-	@include grid(md) {
-		font-size: 64px;
+	@include grid(lg) {
+		@include text-style(hero);
 	}
 
 	.accent {
@@ -235,4 +234,5 @@
 	font-family: 'sf_monomedium';
 	margin-top: -3px;
 }
+
 

@@ -179,7 +179,7 @@ $type__lh--open: 1.45;
         // font-weight: $type__fw--bold;
         letter-spacing: 0.01rem;
         text-transform: uppercase;
-        font-family: 'sf_monosemibold';
+        font-family: 'sf_monobold';
     }
 
     @else if $style == sm {
@@ -208,8 +208,8 @@ $type__lh--open: 1.45;
     }
 
     @else if $style == hero--sm {
-        font-size: $type__fs--big;
-        font-weight: $type__fw--bold;
+        font-size: $type__fs--x-big;
+        font-weight: $type__fw--black;
         font-family: $type__ff--serif;
     }
 

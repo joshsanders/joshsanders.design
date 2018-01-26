@@ -9,6 +9,10 @@ html {
 
 .section {
 	@include v-space(128);
+
+	@include grid(md) {
+		@include v-space(80);
+	}
 }
 
 .dash-spacer {
@@ -87,9 +91,18 @@ html {
 }
 
 .color-bar--home {
-	background: rgba(255, 0, 36, 0.3);
-	background: linear-gradient(to bottom, rgba(255, 23, 0, 0.3) 0, rgba(255, 0, 36, 0.3) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1700', endColorstr='#ff0024', GradientType=0 );
+	// background: rgba(255, 0, 36, 0.3);
+	// background: linear-gradient(to bottom, rgba(255, 23, 0, 0.3) 0, rgba(255, 0, 36, 0.3) 100%);
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1700', endColorstr='#ff0024', GradientType=0 );
+
+	background: rgba(216, 216, 222, .3);
+	background: linear-gradient(to bottom, rgba(244, 244, 245, .3) 0, rgba(216, 216, 222, .3) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f5', endColorstr='#d8d8de', GradientType=0 );
+
+	@include grid(md) {
+		width: 100vw;
+    	transform: translate(-100vw,-5px);
+	}
 }
 
 .color-bar--project {
@@ -149,80 +162,19 @@ html {
 }
 
 
-// .home {
-// 	.bg-knockout {
-// 		height: 100%;
-// 		position: absolute;
-// 		top: 0;
-// 		left: 0;
-// 		right: 0;
-// 		bottom: 0;
-// 		z-index: -5;
-// 		overflow-y: hidden;
+.titled-list {
 
-// 		.grid__row,
-// 		.grid__col {
-// 			height: 100%;
-// 		}
+	&:not(:first-of-type) {
+		margin-top: 4rem;
+	}
+}
 
-// 		.color-bar {
-// 			background: color(primary, 600);
-// 			background: rgba(247,84,47,0.3);
-// 			background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
-// 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
-// 			height: calc(100% + 10px);
-// 	    	transform: translateY(-5px);
-// 			box-shadow: inset 2px 0 8px rgba(0, 0, 0, .2), inset -2px 0 8px rgba(0, 0, 0, .2);
-// 		}
+.titled-list--stacked {
 
-// 	}
-
-
-// .project {
-// 	.bg-knockout {
-// 		height: 100%;
-// 		position: absolute;
-// 		top: 0;
-// 		left: 0;
-// 		right: 0;
-// 		bottom: 0;
-// 		z-index: -5;
-
-// 		.grid__row,
-// 		.grid__col {
-// 			height: 100%;
-// 		}
-
-// 		.color-bar {
-// 			// background: rgba(247,84,47,0.3);
-// 			// background: linear-gradient(to bottom, rgba(247,84,47,0.3) 0%, rgba(238,45,71,0.3) 100%);
-// 			// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7542f', endColorstr='#ee2d47', GradientType=0 );
-// 			width: 100vw;
-// 			height: calc(100% + 10px);
-// 			transform: translate(-100vw, -5px);
-
-// 			box-shadow: inset 2px 0 8px rgba(0, 0, 0, .2), inset -2px 0 8px rgba(0, 0, 0, .2);
-// 		}
-
-// 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .hero__titled-list {
-
-// }
+	@include grid(md) {
+		margin-top: 4rem;
+	}
+}
 
 .titled-list__label {
 	@include text-style(sm-caps);
