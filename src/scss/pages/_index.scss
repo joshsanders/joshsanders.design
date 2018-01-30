@@ -35,7 +35,7 @@
 
 	}
 
-	.hero__titled-list {
+	.titled-list {
 		.titled-list__content {
 			@include text-style(sm);
 			color: color(primary, base);

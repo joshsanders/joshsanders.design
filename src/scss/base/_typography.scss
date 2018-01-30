@@ -245,6 +245,11 @@ p,
     @include text-style(p);
 }
 
+.p__br {
+    display: block;
+    height: .5rem;
+}
+
 a {
     color: color(grey, 600);
 }
