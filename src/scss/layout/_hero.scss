@@ -11,6 +11,8 @@
 
 	padding-bottom: 1.5rem;
     justify-content: space-between;
+
+    position: relative;
 }
 
 .hero--proj {
@@ -26,6 +28,50 @@
 	.hero__wrap--title {
 		// @include v-space(96);
 	}
+
+
+	.scene {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 50%; 
+	    height: 50vh;
+	    margin: auto 0;
+	    pointer-events: none;
+	    z-index: -1;
+
+	    // filter: blur(50px);
+
+	    @include grid(md) {
+	    	margin: auto;
+	    }
+
+	}
+
+	.scene path {
+		fill: #ee2d48;
+	}
+
+	.scene--employee-portal {
+
+		path {
+			fill: rgba(0,255,169,.4);
+		}
+
+	}
+
+	.scene--employee-portal {
+
+		path {
+			fill: rgba(0,255,169,.4);
+		}
+
+	}
+
+
+
 
 	.hero__wrap--nav {
 		@include v-space(96);
