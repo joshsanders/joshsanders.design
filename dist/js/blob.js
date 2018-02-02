@@ -112,7 +112,7 @@
 			};
 
 			// Window resize.
-			const onResizeFn = debounce(() => this.win = {width: window.innerWidth, height: window.innerHeight}, 20);
+			const onResizeFn = debounce(() => this.win = {width: window.innerWidth, height: window.innerHeight}, 10);
 
 			document.addEventListener('mousemove', onMouseMoveFn);
 			document.addEventListener('touchstart', onMouseMoveFn);
