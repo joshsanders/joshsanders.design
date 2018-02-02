@@ -28,6 +28,43 @@
 		@include v-space(64);
 	}
 
+
+
+	.scene {
+		position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 50%; 
+	    height: 50vh;
+	    margin: auto;
+	    pointer-events: none;
+	    z-index: -1;
+
+	    filter: blur(50px);
+	}
+
+	.scene path {
+		fill: #ee2d48;
+	}
+
+	.scene--employee-portal {
+
+		path {
+			fill: rgba(0,255,169,.4);
+		}
+
+	}
+
+	.scene--employee-portal {
+
+		path {
+			fill: rgba(0,255,169,.4);
+		}
+
+	}
+
 }
 
 
