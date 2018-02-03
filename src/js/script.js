@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 	// handles toggle event for the menu
+	// the following queue functions should be unnecessary once anime.js is fully explored
 
 	// wrapper function for queueAddClass and chaining
 	$.fn.queueAddClass = function(className) {
@@ -24,14 +25,16 @@ $(document).ready(function() {
 		 e.preventDefault();
 
 		$('.menu-container').removeClass('fadeOut').addClass('fadeIn').toggleClass('is-open');
-		$('body').css('overflow', 'hidden');
+		// $('body').css('overflow', 'hidden');
+		$('html').addClass('menu-is-open');
 	});
 
 	$('.js-close-menu').on('click', function(e) {
 		 e.preventDefault();
 
 		$('.menu-container').removeClass('fadeIn').queueAddClass('fadeOut').queueRemoveClass('is-open');
-		$('body').css('overflow', 'auto');
+		// $('body').css('overflow', 'auto');
+		$('html').removeClass('menu-is-open');
 	});
 	
 

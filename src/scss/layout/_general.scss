@@ -8,6 +8,10 @@ html {
 	overflow-x: hidden;
 }
 
+html.menu-is-open {
+	overflow: hidden;
+}
+
 .section {
 	@include v-space(128);
 
@@ -58,7 +62,7 @@ html {
 }
 
 .sidebar--project {
-    margin-left: 0px;
+    // margin-left: 0px;
 }
 
 
@@ -113,6 +117,8 @@ html {
 .color-bar--project {
 	width: 100vw;
 	transform: translate(-100vw, -5px);
+	
+	display: none;
 }
 
 .menu-container {

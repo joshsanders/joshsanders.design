@@ -35,12 +35,19 @@
 	    top: 0;
 	    left: 0;
 	    right: 0;
-	    bottom: 0;
-	    width: 50%; 
-	    height: 50vh;
+	    bottom: -50%;
+
+	    // width: 50%; 
+	    // height: 50vh;
+
+	    width: 50vw;
+    	height: 50vh;
+
 	    margin: auto 0;
 	    pointer-events: none;
 	    z-index: -1;
+
+	    // filter: blur(10px);
 
 	    // filter: blur(50px);
 
@@ -48,27 +55,49 @@
 	    	margin: auto;
 	    }
 
-	}
-
-	.scene path {
-		fill: #ee2d48;
-	}
-
-	.scene--employee-portal {
-
-		path {
-			fill: rgba(0,255,169,.4);
-		}
+	    path {
+	    	
+	    }
 
 	}
 
-	.scene--2600hz {
+	// .scene path {
+	// 	fill: #ee2d48;
+	// }
 
-		path {
-			fill: rgba(255, 94, 0, 0.4);
-		}
 
-	}
+
+	// .scene--employee-portal {
+
+	// 	path {
+	// 		fill: url(#grad);
+	// 	}
+
+	// }
+
+	// .scene--2600hz {
+
+	// 	path {
+	// 		fill: rgba(255, 94, 0, 0.4);
+	// 	}
+
+	// }
+
+	// .scene--spyder {
+
+	// 	path {
+	// 		fill: rgba(253, 59, 59, 0.4);
+	// 	}
+
+	// }
+
+	// .scene--cluster {
+
+	// 	path {
+	// 		fill: rgba(41, 187, 252, 0.4);
+	// 	}
+
+	// }
 
 
 
@@ -124,6 +153,10 @@
 	@include text-style(hero--sm);
 	color: color(grey, 600);
 	position: relative;
+
+	// color: white;
+ //    text-shadow: 1px 1px 6px rgba(0,0,0,0.16);
+
 
 	// @include grid(sm) {
 	// 	@include text-style(hero--sm);
