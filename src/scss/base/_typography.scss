@@ -190,7 +190,8 @@ $type__lh--open: 1.45;
     @else if $style == p {
         font-size: $type__fs--base;
         font-weight: $type__fw--base;
-        line-height: $type__lh--open;
+        // line-height: $type__lh--open;
+        line-height: 1.625;
         // letter-spacing: -0.02rem;
     }
 
@@ -247,7 +248,7 @@ p,
 
 .p__br {
     display: block;
-    height: .5rem;
+    height: 1rem;
 }
 
 a {
