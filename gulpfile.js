@@ -3,6 +3,7 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	cleanCSS = require('gulp-clean-css'),
 	htmlMin = require('gulp-htmlmin'),
+	imageMin = require('gulp-imagemin'),
 	sourcemaps = require('gulp-sourcemaps'),
 	autoprefixer = require('gulp-autoprefixer'),
 	browserSync = require('browser-sync').create();
@@ -17,6 +18,8 @@ var src_scss = './src/scss/**/*.scss',
 	dist_index = './dist/',
 	src_html = './src/work/*.html',
 	dist_html = './dist/work/',
+	src_img = './src/img/**/*',
+	dist_img = './dist/img/',
 	all_html = './src/**/*.html';
 
 
@@ -79,6 +82,18 @@ gulp.task('styles', function(){
 });
 
 
+// Images task
+// ---
+// Compresses images and sends them to `dist/img/...`
+
+gulp.task('img-compress', function() {
+	return gulp.src( src_img )
+		.pipe(imageMin())
+		.pipe(gulp.dest( dist_img ))
+		.pipe(browserSync.stream());
+});
+
+
 // Scripts task
 // ---
 // Minifies js files and sends them to desired destination folder 
@@ -101,6 +116,7 @@ gulp.task('scripts', function(){
 gulp.task('watch', function(){
 
 	gulp.watch( src_scss, ['styles']);
+	// gulp.watch( src_img, ['img-compress']);
 	gulp.watch( src_js, ['scripts']);
 	gulp.watch( src_index, ['html-index']).on('change', browserSync.reload);
 	gulp.watch( src_html, ['html-projects']).on('change', browserSync.reload);

@@ -30,6 +30,30 @@
 
 }
 
+.caption {
+	@include text-style(xs);
+	font-size: 0.6875rem;
+	
+	color: color(grey, 500);
+	line-height: 1.5;
+    font-weight: 400;
+}
+
+.caption--right {
+	text-align: right;
+}
 
 
+
+.section--proj-credits {
+	padding-bottom: 8rem;
+}
+
+.has-depth {
+	box-shadow: 0px 1px 16px rgba(0,0,0, 0.16);
+}
  
+.is-overlapping {
+	margin-top: -20%;
+	background: color(white);
+}

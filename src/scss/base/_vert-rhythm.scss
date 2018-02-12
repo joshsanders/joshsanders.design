@@ -95,6 +95,21 @@ $spc-128: calc( #{$spc-8} * 16 );	// 128px @ base-16
 
 
 
+// |=========================================
+// | 2. Utilitiy Classes for vert spacing                   
+// |=========================================
+
+
+.u_mt--lg {
+    @include v-space(64);
+}
+
+.u_mt--xl {
+    @include v-space(128);
+}
+
+
+
 
 
 // @mixin v-space($val) {
