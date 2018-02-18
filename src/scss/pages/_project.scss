@@ -30,6 +30,28 @@
 
 }
 
+.intro__list {
+    margin-top: 1.5rem;
+    line-height: 1.45;
+    transform: translateX(1rem);
+
+	li {
+		margin-top: 1rem;
+		position: relative;
+
+		&::before {
+			position: absolute;
+	    	content: '—';
+	    	transform: translateX(-1rem);
+	    	font-family: 'sf_monobold', monospaced;
+		}
+
+		// span {
+		// 	font-family: 'sf_monobold';
+		// }
+	}
+}
+
 .caption {
 	@include text-style(xs);
 	font-size: 0.6875rem;
