@@ -137,6 +137,24 @@
 		}
 	}
 
+	.proj-list--disclaimer {
+		// text-decoration: line-through;
+		pointer-events: none;
+
+		.strike {
+			text-decoration: line-through;
+			color: color(grey, 300);
+		}
+
+		.tag {
+		    // text-transform: uppercase;
+    		// font-size: 0.75rem;
+    		@include text-style(sm-caps);
+    		color: color(grey, base);
+		}
+
+	}
+
 	.proj__link {
 		display: block;
 	}

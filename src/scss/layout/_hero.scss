@@ -170,8 +170,12 @@
 }
 
 .hero .titled-list__label {
-	color: color(primary, base);
+	color: color(grey, 600);
 	margin-bottom: 0;
+
+	span {
+		color: color(primary, base);
+	}
 }
 
 .hero__date {
