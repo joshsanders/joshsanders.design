@@ -20,6 +20,10 @@
 
 .project {
 
+	img {
+		width: 100%;
+	}
+
 	.section__title {
 		@include text-style(sm-caps);	
 	}
@@ -55,16 +59,32 @@
 .caption {
 	@include text-style(xs);
 	font-size: 0.6875rem;
-	
 	color: color(grey, 500);
 	line-height: 1.5;
     font-weight: 400;
+
+    @include grid(md) {
+    	margin-bottom: 1.5rem;
+    }
+
 }
 
 .caption--right {
-	text-align: right;
+	text-align: left;
+
+	@include grid(lg) {
+		text-align: right;
+	}
+
 }
 
+@include grid(md) {
+
+	.md\:caption-fix {
+		margin-top: 1.5rem;
+	}
+	
+}
 
 
 .section--proj-credits {
@@ -76,6 +96,11 @@
 }
  
 .is-overlapping {
-	margin-top: -20%;
-	background: color(white);
+	margin-top: 4rem;
+
+	@include grid(lg) {
+		margin-top: -20%;
+		background: color(white);
+	}
+
 }

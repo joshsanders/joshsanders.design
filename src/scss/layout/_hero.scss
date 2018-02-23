@@ -4,6 +4,7 @@
 
 
 .hero {
+	height: 100%;
 	height: 100vh;
 	max-height: 1000px;
 	display: flex;
@@ -26,6 +27,7 @@
 	.hero__wrap--title {
 	}
 
+	// controls the animated blobs on each project page
 
 	.scene {
 		position: absolute;
@@ -189,5 +191,23 @@
 .hero__proj-glyph {
 	font-family: 'sf_monomedium';
 	margin-top: -3px;
+}
+
+
+
+
+// OVERRIDES
+
+@include grid(md) {
+
+	.md\:title-fix {
+		display: inline-block;
+
+		.scene {
+			left: 30%;
+		}
+		
+	}
+		
 }
 

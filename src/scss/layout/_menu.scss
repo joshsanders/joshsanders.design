@@ -6,6 +6,7 @@
 .menu-container {
 	position: fixed;
 	display: none;
+	width: 100%;
 	width: 100vw;
 	height: 100vh;
 	left: 0;
@@ -100,6 +101,7 @@
 }
 
 .menu__social {
+	transform: translateY(-8px);
 
 	.social__item {
 		display: inline-block;
@@ -141,9 +143,19 @@
 		// text-decoration: line-through;
 		pointer-events: none;
 
+		.proj__name {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.proj__number {
+			transform: translateY(3px);
+		}
+
 		.strike {
 			text-decoration: line-through;
 			color: color(grey, 300);
+			display: block;
 		}
 
 		.tag {
@@ -151,6 +163,7 @@
     		// font-size: 0.75rem;
     		@include text-style(sm-caps);
     		color: color(grey, base);
+    		display: block;
 		}
 
 	}

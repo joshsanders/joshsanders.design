@@ -3,21 +3,37 @@
 \*------------------------------------*/
 
 
-html {
-	position: relative;
-	overflow-x: hidden;
+html,
+.main-container {
+	position: relative !important;
+	overflow-x: hidden !important;
 }
 
 html.menu-is-open {
-	overflow: hidden;
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+	// overflow-x: hidden;
+	// overflow-y: hidden;
+
+	.main-container {
+		overflow-x: hidden !important;
+		overflow-y: hidden !important;
+		// overflow-x: hidden;
+		// overflow-y: hidden;
+	}
+
 }
 
 .section {
 	@include v-space(128);
 
-	@include grid(md) {
-		@include v-space(80);
-	}
+	// @include grid(md) {
+	// 	@include v-space(80);
+	// }
+}
+
+.section--case-study {
+
 }
 
 .dash-spacer {
