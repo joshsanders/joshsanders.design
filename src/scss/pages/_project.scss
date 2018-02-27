@@ -104,3 +104,26 @@
 	}
 
 }
+
+.scroller {
+ 	background: color(grey, 700);
+ 	// height: 600px;
+ 	padding: 3rem 0;
+ 	overflow: hidden;
+}
+
+.scroller__content {
+	background: url('../img/Apps_02-Grid.png') repeat-x;
+	height: 632px;
+	width: 7560px;
+	animation: slide 60s linear infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-2520px, 0, 0);
+  }
+}
