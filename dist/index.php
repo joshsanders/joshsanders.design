@@ -324,7 +324,7 @@
 			
 
 			<?php $path_to_resume = "JoshSanders_Resume-2018.pdf";
-			  include("../partials/mobile-disclaimer.php"); ?>
+			  include("partials/mobile-disclaimer.php"); ?>
 
 		<!-- </div> -->
 		
