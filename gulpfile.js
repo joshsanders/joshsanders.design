@@ -14,16 +14,23 @@ var src_scss = './src/scss/**/*.scss',
 	dist_css = './dist/css',
 	src_js = './src/js/**/*.js',
 	dist_js = './dist/js',
-	src_index = './src/index.html',
+	src_index = './src/index.php',
 	dist_index = './dist/',
-	src_html = './src/work/*.html',
+	src_html = './src/work/*.php',
 	dist_html = './dist/work/',
+
+	src_partials = './src/partials/**/*.*',
+	dist_partials = './dist/partials/',
+
 	src_img = './src/img/**/*',
 	dist_img = './dist/img/',
 	all_html = './src/**/*.html';
 
 
 
+// |=======================================
+// | Browswer-sync                   
+// |=======================================
 
 // Browser-sync for live reloads
 // ---
@@ -37,6 +44,10 @@ gulp.task('serve', function(){
 	});
 });
 
+
+// |=======================================
+// | HTML Tasks                   
+// |=======================================
 
 // Html task for [src -> dist] (should minify for final build, currently just clones to ./dist/)
 // ---
@@ -63,7 +74,29 @@ gulp.task('html-projects', function() {
 // gulp.task('html', ['html-index', 'html-projects']);
 
 
-// Styles task
+
+// |=======================================
+// | Partials Task                   
+// |=======================================
+
+// Task for [src -> dist] (should minify for final build, currently just clones to ./dist/)
+
+gulp.task('partials', function() {
+  return gulp.src( src_partials )
+    // .pipe(htmlMin({
+    // 	collapseWhitespace: true
+    // }))
+    .pipe(gulp.dest( dist_partials ))
+    .pipe(browserSync.stream());
+});
+
+
+
+
+// |=======================================
+// | Styles Task                   
+// |=======================================
+
 // ---
 // Compiles Sass(.scss), generates sourcemaps, minifies outputted css files before sending 
 // them to desired destination folder 
@@ -82,7 +115,10 @@ gulp.task('styles', function(){
 });
 
 
-// Images task
+// |=======================================
+// | IMG Compression                
+// |=======================================
+
 // ---
 // Compresses images and sends them to `dist/img/...`
 
@@ -94,7 +130,10 @@ gulp.task('img-compress', function() {
 });
 
 
-// Scripts task
+// |=======================================
+// | Scripts Task                   
+// |=======================================
+
 // ---
 // Minifies js files and sends them to desired destination folder 
 
@@ -109,7 +148,10 @@ gulp.task('scripts', function(){
 });
 
 
-// Watch task
+// |=======================================
+// | Watch task                   
+// |=======================================
+
 // ---
 // watches directory for changes, and applies the Styles and Scripts tasks stated above
 
@@ -117,6 +159,7 @@ gulp.task('watch', function(){
 
 	gulp.watch( src_scss, ['styles']);
 	// gulp.watch( src_img, ['img-compress']);
+	gulp.watch( src_partials, ['partials']);
 	gulp.watch( src_js, ['scripts']);
 	gulp.watch( src_index, ['html-index']).on('change', browserSync.reload);
 	gulp.watch( src_html, ['html-projects']).on('change', browserSync.reload);
