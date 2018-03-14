@@ -91,6 +91,9 @@
 	padding-bottom: 8rem;
 }
 
+
+// Project image specific styles
+
 .has-depth {
 	box-shadow: 0px 1px 16px rgba(0,0,0, 0.16);
 }
@@ -105,25 +108,39 @@
 
 }
 
-.scroller {
- 	background: color(grey, 700);
- 	// height: 600px;
- 	padding: 3rem 0;
- 	overflow: hidden;
+.is-full-width {
+    transform: translateX(-1.5rem);
+    max-width: calc(100% + 3rem);
+    width: calc(100vw + 3rem);
 }
 
-.scroller__content {
-	background: url('../img/Apps_02-Grid.png') repeat-x;
-	height: 632px;
-	width: 7560px;
-	animation: slide 60s linear infinite;
+.is-pulled-right {
+	max-width: calc(100% + 1.5rem);
+    width: calc(100% + 1.5rem);
 }
 
-@keyframes slide{
-  0%{
-    transform: translate3d(0, 0, 0);
-  }
-  100%{
-    transform: translate3d(-2520px, 0, 0);
-  }
-}
+
+// scrolling test for mui app icons
+
+// .scroller {
+//  	background: color(grey, 700);
+//  	// height: 600px;
+//  	padding: 3rem 0;
+//  	overflow: hidden;
+// }
+
+// .scroller__content {
+// 	background: url('../img/Apps_02-Grid.png') repeat-x;
+// 	height: 632px;
+// 	width: 7560px;
+// 	animation: slide 60s linear infinite;
+// }
+
+// @keyframes slide{
+//   0%{
+//     transform: translate3d(0, 0, 0);
+//   }
+//   100%{
+//     transform: translate3d(-2520px, 0, 0);
+//   }
+// }
