@@ -12,8 +12,10 @@ var gulp = require('gulp'),
 // vars to handle file pathing
 var src_scss = './src/scss/**/*.scss',
 	dist_css = './dist/css',
+
 	src_js = './src/js/**/*.js',
 	dist_js = './dist/js',
+	
 	src_index = './src/index.php',
 	dist_index = './dist/',
 	src_html = './src/work/*.php',

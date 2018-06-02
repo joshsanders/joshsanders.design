@@ -38,7 +38,7 @@
 	 
 	<body>
 
-		<div class="main-container sm:is-hidden">
+		<div class="main-container pos-fix sm:is-hidden">
 			<!-- ================================================== -->
 			<!-- HERO 												-->
 			<!-- ================================================== -->

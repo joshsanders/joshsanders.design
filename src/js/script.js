@@ -3,6 +3,10 @@ $(document).ready(function() {
 	// handles toggle event for the menu
 	// the following queue functions should be unnecessary once anime.js is fully explored
 
+	// will probabaly have to remove this once the blob is gone
+
+	
+
 	// wrapper function for queueAddClass and chaining
 	$.fn.queueAddClass = function(className) {
 	    this.queue('fx', function(next) {

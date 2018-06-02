@@ -3,23 +3,23 @@
 \*------------------------------------*/
 
 
-html,
+// html,
 .main-container {
 	position: relative !important;
-	overflow-x: hidden !important;
+	
+
+	&:not(.pos-fix) {
+		overflow-x: hidden !important;
+	}
 }
 
 html.menu-is-open {
 	overflow-x: hidden !important;
 	overflow-y: hidden !important;
-	// overflow-x: hidden;
-	// overflow-y: hidden;
 
 	.main-container {
 		overflow-x: hidden !important;
 		overflow-y: hidden !important;
-		// overflow-x: hidden;
-		// overflow-y: hidden;
 	}
 
 }
