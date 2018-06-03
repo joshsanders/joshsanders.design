@@ -106,30 +106,29 @@
 								</a>
 							</li>
 
-							<li class="proj-list__proj">
-								<a class="proj__link" href="<?php echo $path_fix; ?>mui-app-icons">
+							<!-- <li class="proj-list__proj">
+								<a class="proj__link" href="< *** ?php echo $path_fix; ?>mui-app-icons">
 									<span class="proj__number">07</span> 
 									<span class="proj__name">MUI App Icons</span>
 								</a>
-							</li>
-
+							</li> -->
 
 							<li class="proj-list__proj proj-list--disclaimer">
-								<a class="proj__link" href="<?php echo $path_fix; ?>mui-whitelabeling">
-									<span class="proj__number">08</span> 
+								<a class="proj__link" href="<?php echo $path_fix; ?>mui-callcenter">
+									<span class="proj__number">07</span> 
 									<span class="proj__name">
-										<span class="strike">MUI Brand Configurator</span>
-										<span class="tag">Case Study in Progress</span>
+										<span class="strike">MUI Enterprise Call Center</span>
+										<span class="tag">Coming soon</span>
 									</span>
 								</a>
 							</li>
 
 							<li class="proj-list__proj proj-list--disclaimer">
 								<a class="proj__link" href="<?php echo $path_fix; ?>civil-maps-identity">
-									<span class="proj__number">09</span> 
+									<span class="proj__number">08</span> 
 									<span class="proj__name">
-										<span class="strike">Civil Maps Identity</span>
-										<span class="tag">Case Study in Progress</span>
+										<span class="strike">Monster Design System</span>
+										<span class="tag">Coming Soon</span>
 									</span>
 								</a>
 							</li>
