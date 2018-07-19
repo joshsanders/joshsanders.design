@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-		<title>MUI Employee Portal — Josh Sanders Design</title>
+		<title>MUI Company Portal — Josh Sanders Design</title>
 		<!-- favicons -->
 		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 		<link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -41,7 +41,7 @@
 						</div>
 
 						<div class="project__count">
-							<span class="project__number">01</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>09
+							<span class="project__number">01</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
 						</div>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 							</div>
 
 							<div class="grid__col md:col--7 lg:col--9">
-								<h1 class="hero__title">employee portal
+								<h1 class="hero__title">company portal
 									<svg class="scene" preserveAspectRatio="none" viewBox="0 0 1440 800">
 										<defs>
 										    <radialGradient id="grad" cx="50%" cy="50%" r="50%">
@@ -139,7 +139,7 @@
 
 					<div class="grid__row">
 						<div class="grid__col md:col--6 md:offset--1 lg:col--8 lg:offset--3">
-							<p class="p proj__intro">I was tasked with creating an experience that allowed 2600Hz customers (and their customers) to access all work related communication channels in a single, unified environment. Up until the introduction of this app, 2600Hz's suite of telecom apps—known as Monster UI—catered mainly to system or account admins and was largely focused on configuration and management.<span class="p__br"></span>MUI Employee Portal would be the first app that could be accessed by all user profiles (System Admin, Account Admin, and end-user) and would include account details such as call history, voicemails, numbers etc. In addition to the defaults, 3rd party integrations such as messaging (slack , IRC...), email (gmail, outlook...), and company social media feeds (twitter, facebook...) would be available.<span class="p__br"></span>The main objective was to create the foundation of an app that could continue to scale while allowing for any number of API-based integrations.</p>
+							<p class="p proj__intro">I was tasked with creating an experience that allowed 2600Hz customers (and their customers) to access all work related communication channels in a single, unified environment. Up until the introduction of this app, 2600Hz's suite of telecom apps—known as Monster UI—catered mainly to system or account admins and was largely focused on configuration and management.<span class="p__br"></span>MUI Company Portal would be the first app that could be accessed by all user profiles (System Admin, Account Admin, and end-user) and would include account details such as call history, voicemails, numbers etc. In addition to the defaults, 3rd party integrations such as messaging (slack , IRC...), email (gmail, outlook...), and company social media feeds (twitter, facebook...) would be available.<span class="p__br"></span>The main objective was to create the foundation of an app that could continue to scale while allowing for any number of API-based integrations.</p>
 						</div>
 					</div>
 
@@ -165,13 +165,13 @@
 						</div>
 
 						<div class="grid__col md:col--7 md:offset--1 lg:col--9">
-							<img class="has-depth" src="../img/EP_01-WhiteboardSession.jpg" alt="whiteboard planning for employee portal app">
+							<img class="has-depth" src="../img/EP_01-WhiteboardSession.jpg" alt="whiteboard planning for company portal app">
 						</div>
 					</div>
 
 					<div class="grid__row">
 						<div class="grid__col md:col--7 md:offset--1 lg:col--9">
-							<img class="has-depth is-overlapping" src="../img/EP_02-IAMapping.png" alt="information architecture and mapping for employee portal app" srcset="../img/EP_02-IAMapping.png, ../img/EP_02-IAMapping@2x.png 2x">
+							<img class="has-depth is-overlapping" src="../img/EP_02-IAMapping.png" alt="information architecture and mapping for company portal app" srcset="../img/EP_02-IAMapping.png, ../img/EP_02-IAMapping@2x.png 2x">
 						</div>
 					</div>
 
@@ -231,43 +231,43 @@
 						</div>
 
 						<div class="grid__col md:col--7 md:offset--1 lg:col--9">
-							<img src="../img/EP_07-Drawers.png" alt="Side-drawers for Employee Portal" srcset="../img/EP_07-Drawers.png, ../img/EP_07-Drawers@2x.png 2x">
+							<img src="../img/EP_07-Drawers.png" alt="Side-drawers for Company Portal" srcset="../img/EP_07-Drawers.png, ../img/EP_07-Drawers@2x.png 2x">
 						</div>
 					</div>
 
 					<div class="grid__row u_mt--xl">
 						<div class="grid__col md:col--7 md:offset--1 lg:col--9 lg:offset--3">
-							<img class="has-depth" src="../img/EP_08-UI_1.png" alt="Employee Portal home dashboard" srcset="../img/EP_08-UI_1.png, ../img/EP_08-UI_1@2x.png 2x">
+							<img class="has-depth" src="../img/EP_08-UI_1.png" alt="Company Portal home dashboard" srcset="../img/EP_08-UI_1.png, ../img/EP_08-UI_1@2x.png 2x">
 						</div>
 					</div>
 
 					<div class="grid__row u_mt--xl">
 						<div class="grid__col md:col--7 md:offset--1 lg:col--9 lg:offset--3">
-							<img class="has-depth" src="../img/EP_08-UI_2.png" alt="Employee Portal settings side-drawer" srcset="../img/EP_08-UI_2.png, ../img/EP_08-UI_2@2x.png 2x">
+							<img class="has-depth" src="../img/EP_08-UI_2.png" alt="Company Portal settings side-drawer" srcset="../img/EP_08-UI_2.png, ../img/EP_08-UI_2@2x.png 2x">
 						</div>
 					</div>
 
 					<div class="grid__row u_mt--xl">
 						<div class="grid__col md:col--7 md:offset--1 lg:col--9 lg:offset--3">
-							<img class="has-depth" src="../img/EP_08-UI_3.png" alt="Employee Portal Voicemails" srcset="../img/EP_08-UI_3.png, ../img/EP_08-UI_3@2x.png 2x">
+							<img class="has-depth" src="../img/EP_08-UI_3.png" alt="Company Portal Voicemails" srcset="../img/EP_08-UI_3.png, ../img/EP_08-UI_3@2x.png 2x">
 						</div>
 					</div>
 
 					<div class="grid__row u_mt--xl">
 						<div class="grid__col md:col--7 md:offset--1 lg:col--9 lg:offset--3">
-							<img class="has-depth" src="../img/EP_08-UI_4.png" alt="Employee Portal devices and numbers" srcset="../img/EP_08-UI_4.png, ../img/EP_08-UI_4@2x.png 2x">
+							<img class="has-depth" src="../img/EP_08-UI_4.png" alt="Company Portal devices and numbers" srcset="../img/EP_08-UI_4.png, ../img/EP_08-UI_4@2x.png 2x">
 						</div>
 					</div>
 
 					<div class="grid__row u_mt--xl">
 						<div class="grid__col md:col--7 md:offset--1 lg:col--9 lg:offset--3">
-							<img class="has-depth" src="../img/EP_08-UI_5.png" alt="Employee Portal conferences" srcset="../img/EP_08-UI_5.png, ../img/EP_08-UI_5@2x.png 2x">
+							<img class="has-depth" src="../img/EP_08-UI_5.png" alt="Company Portal conferences" srcset="../img/EP_08-UI_5.png, ../img/EP_08-UI_5@2x.png 2x">
 						</div>
 					</div>
 
 					<div class="grid__row u_mt--xl">
 						<div class="grid__col md:col--7 md:offset--1 lg:col--9 lg:offset--3">
-							<img class="has-depth" src="../img/EP_08-UI_6.png" alt="Employee Portal contacts" srcset="../img/EP_08-UI_6.png, ../img/EP_08-UI_6@2x.png 2x">
+							<img class="has-depth" src="../img/EP_08-UI_6.png" alt="Company Portal contacts" srcset="../img/EP_08-UI_6.png, ../img/EP_08-UI_6@2x.png 2x">
 						</div>
 					</div>
 

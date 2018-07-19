@@ -170,7 +170,7 @@
 
 							
 							<li class="showcase-list__project">
-								<a class="grid__row project__link" href="work/employee-portal">
+								<a class="grid__row project__link" href="work/company-portal">
 
 									<!-- <div class="grid__col md:is-hidden lg:col--4">
 										<div class="sidebar"></div>
@@ -179,7 +179,7 @@
 									<div class="grid__col md:col--2 md:offset--1 lg:col--3 lg:offset--1">
 										<div class="project__label">
 											<div class="project__count">
-												<span class="project__number">01</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>09
+												<span class="project__number">01</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
 											</div>
 											
 											<div class="project__cta-text">VIEW</div>
@@ -187,7 +187,7 @@
 									</div>
 
 									<div class="grid__col md:col--5 lg:col--7 lg:offset--1">
-										<h2 class="project__name">MUI Employee Portal</h2>
+										<h2 class="project__name">MUI Company Portal</h2>
 										<p class="project__desc">Monster UI application that allows employees to access personalized communication media and settings under their company's KAZOO account.</p>
 									</div>
 								</a>
@@ -203,7 +203,7 @@
 									<div class="grid__col md:col--2 md:offset--1 lg:col--3 lg:offset--1">
 										<div class="project__label">
 											<div class="project__count">
-												<span class="project__number">02</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>09
+												<span class="project__number">02</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
 											</div>
 											
 											<div class="project__cta-text">VIEW</div>
@@ -227,7 +227,7 @@
 									<div class="grid__col md:col--2 md:offset--1 lg:col--3 lg:offset--1">
 										<div class="project__label">
 											<div class="project__count">
-												<span class="project__number">03</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>09
+												<span class="project__number">03</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
 											</div>
 											
 											<div class="project__cta-text">VIEW</div>
@@ -251,7 +251,7 @@
 									<div class="grid__col md:col--2 md:offset--1 lg:col--3 lg:offset--1">
 										<div class="project__label">
 											<div class="project__count">
-												<span class="project__number">04</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>09
+												<span class="project__number">04</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
 											</div>
 											
 											<div class="project__cta-text">VIEW</div>
@@ -319,16 +319,13 @@
 		<!-- MOBILE DISCLAIMER -->
 		<!-- ================================================== -->
 
-		<!-- <div class="sm-container sm:is-visible md:is-hidden lg:is-hidden"> -->
-
-			
-
-			<?php $path_to_resume = "JoshSanders_Resume-2018.pdf";
+		<?php $path_to_resume = "JoshSanders_Resume-2018.pdf";
 			  include("partials/mobile-disclaimer.php"); ?>
 
+		<!-- <div class="sm-container sm:is-visible md:is-hidden lg:is-hidden"> -->
 		<!-- </div> -->
-		
 
+		
 
 		
 		

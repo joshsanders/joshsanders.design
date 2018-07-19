@@ -41,7 +41,7 @@
 						</div>
 
 						<div class="project__count">
-							<span class="project__number">07</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>09
+							<span class="project__number">07</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
 						</div>
 					</div>
 				</div>

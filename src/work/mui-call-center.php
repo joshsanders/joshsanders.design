@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>MUI Brand Configurator — Josh Sanders Design</title>
+		<title>MUI Call Center — Josh Sanders Design</title>
 		<!-- favicons -->
 		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 		<link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -41,7 +41,7 @@
 						</div>
 
 						<div class="project__count">
-							<span class="project__number">08</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
+							<span class="project__number">07</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
 						</div>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 							</div>
 
 							<div class="grid__col md:col--7 lg:col--9">
-								<h1 class="hero__title">brand configurator
+								<h1 class="hero__title">call center pro
 									<svg class="scene" preserveAspectRatio="none" viewBox="0 0 1440 800">
 										<defs>
 										    <radialGradient id="grad" cx="50%" cy="50%" r="50%">
@@ -82,7 +82,7 @@
 							</div>
 
 							<div class="grid__col md:col--5 md:offset--1 lg:col--6">
-								<h2 class="hero__proj-summary">Monster UI application which allows account &amp; system administrators to whitelabel and configure the KAZOO platform under their own branding.</h2>
+								<h2 class="hero__proj-summary">Monster UI application that enables businesses to efficiently configure, monitor, and own their Call Center experience.</h2>
 							</div>
 						</div>
 					</div>
@@ -108,7 +108,8 @@
 								<div class="titled-list__label">Responsibilities</div>
 								<div class="titled-list__content">
 									<ul class="ul">
-										<li class="list-item">UX / Information Architecture</li>
+										<li class="list-item">Information Architecture & Planning</li>
+										<li class="list-item">User Experience</li>
 										<li class="list-item">Interface Design</li>
 									</ul>
 								</div>

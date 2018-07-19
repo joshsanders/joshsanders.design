@@ -1,7 +1,7 @@
 <!-- menu-overlay -->
 
 <div class="menu-container animated">
-	<div class="menu ">
+	<div class="menu">
 		<div class="grid">
 			<div class="menu__header">
 				<div class="grid__row">
@@ -65,9 +65,9 @@
 							<h4 class="proj-list__label">WORK</h4>
 
 							<li class="proj-list__proj">
-								<a class="proj__link" href="<?php echo $path_fix; ?>employee-portal">
+								<a class="proj__link" href="<?php echo $path_fix; ?>company-portal">
 									<span class="proj__number">01</span> 
-									<span class="proj__name">MUI Employee Portal</span>
+									<span class="proj__name">MUI Company Portal</span>
 								</a>
 							</li>
 
@@ -106,6 +106,13 @@
 								</a>
 							</li>
 
+							<li class="proj-list__proj">
+								<a class="proj__link" href="<?php echo $path_fix; ?>mui-call-center">
+									<span class="proj__number">07</span> 
+									<span class="proj__name">MUI Call Center</span>
+								</a>
+							</li>
+
 							<!-- <li class="proj-list__proj">
 								<a class="proj__link" href="< *** ?php echo $path_fix; ?>mui-app-icons">
 									<span class="proj__number">07</span> 
@@ -113,15 +120,15 @@
 								</a>
 							</li> -->
 
-							<li class="proj-list__proj proj-list--disclaimer">
-								<a class="proj__link" href="<?php echo $path_fix; ?>mui-callcenter">
+							<!-- <li class="proj-list__proj proj-list--disclaimer">
+								<a class="proj__link" href="< *** ?php echo $path_fix; ?>mui-callcenter">
 									<span class="proj__number">07</span> 
 									<span class="proj__name">
 										<span class="strike">MUI Enterprise Call Center</span>
 										<span class="tag">Coming soon</span>
 									</span>
 								</a>
-							</li>
+							</li> -->
 
 							<li class="proj-list__proj proj-list--disclaimer">
 								<a class="proj__link" href="<?php echo $path_fix; ?>civil-maps-identity">
@@ -155,4 +162,4 @@
 
 </div>
 
-<!-- /menu-overlay -->
+<!-- /menu-overlay  -->
