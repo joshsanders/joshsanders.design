@@ -139,7 +139,11 @@
 
 					<div class="grid__row">
 						<div class="grid__col md:col--6 md:offset--1 lg:col--8 lg:offset--3">
-							<p class="p proj__intro">I was tasked with creating an experience that allowed 2600Hz customers (and their customers) to access all work related communication channels in a single, unified environment. Up until the introduction of this app, 2600Hz's suite of telecom apps—known as Monster UI—catered mainly to system or account admins and was largely focused on configuration and management.<span class="p__br"></span>MUI Company Portal would be the first app that could be accessed by all user profiles (System Admin, Account Admin, and end-user) and would include account details such as call history, voicemails, numbers etc. In addition to the defaults, 3rd party integrations such as messaging (slack , IRC...), email (gmail, outlook...), and company social media feeds (twitter, facebook...) would be available.<span class="p__br"></span>The main objective was to create the foundation of an app that could continue to scale while allowing for any number of API-based integrations.</p>
+							<p class="p proj__intro">I was tasked with creating an experience that allowed 2600Hz customers (and their customers) to access all work related communication channels in a single, unified environment. Up until the introduction of this app, 2600Hz's suite of telecom apps—known as Monster UI—catered mainly to system or account admins and was largely focused on configuration and management.
+							<span class="p__br"></span>
+							MUI Company Portal would be the first app that could be accessed by all user profiles (System Admin, Account Admin, and end-user) and would include account details such as call history, voicemails, numbers etc. In addition to the defaults, 3rd party integrations such as messaging (slack , IRC...), email (gmail, outlook...), and company social media feeds (twitter, facebook...) would be available.
+							<span class="p__br"></span>
+							The main objective was to create the foundation of an app that could continue to scale while allowing for any number of API-based integrations.</p>
 						</div>
 					</div>
 
