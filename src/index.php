@@ -168,7 +168,50 @@
 					<div class="grid__row">
 						<ul class="showcase-list">
 
-							
+							<li class="showcase-list__project">
+								<a class="grid__row project__link" href="work/mui-call-center">
+
+									<div class="grid__col md:col--2 md:offset--1 lg:col--3 lg:offset--1">
+										<div class="project__label">
+											<div class="project__count">
+												<span class="project__number">01</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
+											</div>
+											
+											<div class="project__cta-text">VIEW</div>
+										</div>
+									</div>
+
+									<div class="grid__col md:col--5 lg:col--7 lg:offset--1">
+										<h2 class="project__name">MUI Call Center</h2>
+										<p class="project__desc">Monster UI application that enables businesses to efficiently configure, monitor, and own their call center experience.</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="showcase-list__project">
+								<a class="grid__row project__link" href="work/spyder">
+
+									<!-- <div class="grid__col md:is-hidden lg:col--4">
+										<div class="sidebar"></div>
+									</div> -->
+
+									<div class="grid__col md:col--2 md:offset--1 lg:col--3 lg:offset--1">
+										<div class="project__label">
+											<div class="project__count">
+												<span class="project__number">02</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
+											</div>
+											
+											<div class="project__cta-text">VIEW</div>
+										</div>
+									</div>
+
+									<div class="grid__col md:col--5 lg:col--7 lg:offset--1">
+										<h2 class="project__name">Spyder</h2>
+										<p class="project__desc">A fluid, adaptable, and customizable Sass(.scss) grid-system based on flexbox.</p>
+									</div>
+								</a>
+							</li>
+
 							<li class="showcase-list__project">
 								<a class="grid__row project__link" href="work/company-portal">
 
@@ -179,7 +222,7 @@
 									<div class="grid__col md:col--2 md:offset--1 lg:col--3 lg:offset--1">
 										<div class="project__label">
 											<div class="project__count">
-												<span class="project__number">01</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
+												<span class="project__number">03</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
 											</div>
 											
 											<div class="project__cta-text">VIEW</div>
@@ -193,12 +236,8 @@
 								</a>
 							</li>
 
-							<li class="showcase-list__project">
+							<!-- <li class="showcase-list__project">
 								<a class="grid__row project__link" href="work/2600hz-online-experience">
-
-									<!-- <div class="grid__col md:is-hidden lg:col--4">
-										<div class="sidebar"></div>
-									</div> -->	
 
 									<div class="grid__col md:col--2 md:offset--1 lg:col--3 lg:offset--1">
 										<div class="project__label">
@@ -215,34 +254,12 @@
 										<p class="project__desc">Re-structured information architecture and navigation experience for the public-facing properties of 2600Hz.</p>
 									</div>
 								</a>
-							</li>
+							</li> -->
+
+							
 
 							<li class="showcase-list__project">
-								<a class="grid__row project__link" href="work/spyder">
-
-									<!-- <div class="grid__col md:is-hidden lg:col--4">
-										<div class="sidebar"></div>
-									</div> -->
-
-									<div class="grid__col md:col--2 md:offset--1 lg:col--3 lg:offset--1">
-										<div class="project__label">
-											<div class="project__count">
-												<span class="project__number">03</span><span class="dash-spacer"></span>&ndash;<span class="dash-spacer"></span>08
-											</div>
-											
-											<div class="project__cta-text">VIEW</div>
-										</div>
-									</div>
-
-									<div class="grid__col md:col--5 lg:col--7 lg:offset--1">
-										<h2 class="project__name">Spyder</h2>
-										<p class="project__desc">A fluid, adaptable, and customizable Sass(.scss) grid-system based on flexbox.</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="showcase-list__project">
-								<a class="grid__row project__link" href="work/cluster-manager">
+								<a class="grid__row project__link" href="work/2600hz-identity">
 
 									<!-- <div class="grid__col md:is-hidden lg:col--4">
 										<div class="sidebar"></div>
@@ -259,8 +276,8 @@
 									</div>
 
 									<div class="grid__col md:col--5 lg:col--7 lg:offset--1">
-										<h2 class="project__name">MUI Cluster Manager</h2>
-										<p class="project__desc">Monster UI application that allows system administrators to deploy, monitor, and manage servers across all data centers under a KAZOO account.</p>
+										<h2 class="project__name">2600Hz Identity</h2>
+										<p class="project__desc">Updating 2600Hz’s corporate identity to better align with company objectives, messaging, and industry positioning.</p>
 									</div>
 								</a>
 							</li>

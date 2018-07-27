@@ -65,37 +65,37 @@
 							<h4 class="proj-list__label">WORK</h4>
 
 							<li class="proj-list__proj">
-								<a class="proj__link" href="<?php echo $path_fix; ?>company-portal">
+								<a class="proj__link" href="<?php echo $path_fix; ?>mui-call-center">
 									<span class="proj__number">01</span> 
-									<span class="proj__name">MUI Company Portal</span>
-								</a>
-							</li>
-
-							<li class="proj-list__proj">
-								<a class="proj__link" href="<?php echo $path_fix; ?>2600hz-online-experience">
-									<span class="proj__number">02</span>  
-									<span class="proj__name">2600Hz Online Experience</span>
+									<span class="proj__name">MUI Call Center</span>
 								</a>
 							</li>
 
 							<li class="proj-list__proj">
 								<a class="proj__link" href="<?php echo $path_fix; ?>spyder">
-									<span class="proj__number">03</span> 
+									<span class="proj__number">02</span> 
 									<span class="proj__name">Spyder</span>
 								</a>
 							</li>
 
 							<li class="proj-list__proj">
-								<a class="proj__link" href="<?php echo $path_fix; ?>cluster-manager">
-									<span class="proj__number">04</span> 
-									<span class="proj__name">MUI Cluster Manager</span>
+								<a class="proj__link" href="<?php echo $path_fix; ?>company-portal">
+									<span class="proj__number">03</span> 
+									<span class="proj__name">MUI Company Portal</span>
 								</a>
 							</li>
 
 							<li class="proj-list__proj">
 								<a class="proj__link" href="<?php echo $path_fix; ?>2600hz-identity">
-									<span class="proj__number">05</span>  
+									<span class="proj__number">04</span>  
 									<span class="proj__name">2600Hz Identity</span>
+								</a>
+							</li>
+
+							<li class="proj-list__proj">
+								<a class="proj__link" href="<?php echo $path_fix; ?>cluster-manager">
+									<span class="proj__number">05</span> 
+									<span class="proj__name">MUI Cluster Manager</span>
 								</a>
 							</li>
 
@@ -107,18 +107,11 @@
 							</li>
 
 							<li class="proj-list__proj">
-								<a class="proj__link" href="<?php echo $path_fix; ?>mui-call-center">
-									<span class="proj__number">07</span> 
-									<span class="proj__name">MUI Call Center</span>
+								<a class="proj__link" href="<?php echo $path_fix; ?>2600hz-online-experience">
+									<span class="proj__number">07</span>  
+									<span class="proj__name">2600Hz Online Experience</span>
 								</a>
 							</li>
-
-							<!-- <li class="proj-list__proj">
-								<a class="proj__link" href="< *** ?php echo $path_fix; ?>mui-app-icons">
-									<span class="proj__number">07</span> 
-									<span class="proj__name">MUI App Icons</span>
-								</a>
-							</li> -->
 
 							<!-- <li class="proj-list__proj proj-list--disclaimer">
 								<a class="proj__link" href="< *** ?php echo $path_fix; ?>mui-callcenter">
